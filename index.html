@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Clone F8</title>
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Sen:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Grid -->
+        <link rel="stylesheet" href="./assets/css/grid_system.css" />
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <header class="header fixed">
+            <div class="container">
+                <div class="top-bar">
+                    <!-- Logo -->
+                    <a href="./" class="logo">
+                        <img
+                            src="./assets/img/logo.png"
+                            alt=""
+                            class="logo__image"
+                        />
+                    </a>
+
+                    <!-- Navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="" class="navbar__link navbar-active"
+                                    >Trang chủ</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="" class="navbar__link">Lộ trình</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="" class="navbar__link">Bài viết</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="" class="navbar__link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Action -->
+                    <div class="action">
+                        <a href="#!" class="action__signin">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <div class="container">
+            <!-- Slide-show -->
+            <div class="slideshow">
+                <div class="slideshow__inner">
+                    <div class="slideshow__item">
+                        <img
+                            src="./assets/img/slide.png"
+                            alt="slideshow"
+                            class="slideshow__img"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- List-courses -->
+            <section>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="course-heading">Khóa học của phổ biến</h1>
+                    </div>
+                </div>
+
+                <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1">
+                    <!-- Item 1 -->
+                    <div class="col">
+                        <div class="course__item">
+                            <a href="#!" class="course__imageLink">
+                                <img
+                                    src="./assets/img/html-css-pro.png"
+                                    alt=""
+                                    class="course__image"
+                                />
+                            </a>
+                            <h3 class="course__name"><a href="#!">HTML CSS Pro</a></h3>
+                            <span class="course__rice">1.299.000đ</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="col">
+                        <div class="course__item">
+                            <a href="#!" class="course__imageLink">
+                                <img
+                                    src="./assets/img/sass.png"
+                                    alt=""
+                                    class="course__image"
+                                />
+                            </a>
+                            <h3 class="course__name">Ngôn ngữ tiền xử lý Sass</h3>
+                            <span class="course__rice">1.299.000đ</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="col">
+                        <div class="course__item">
+                            <a href="#!" class="course__imageLink">
+                                <img
+                                    src="./assets/img/javascript-co-ban.png"
+                                    alt=""
+                                    class="course__image"
+                                />
+                            </a>
+                            <h3 class="course__name"><a href="#!">Lập trình JavaScript cơ bản</a></h3>
+                            <span class="course__rice">1.299.000đ</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="col">
+                        <div class="course__item">
+                            <a href="#!" class="course__imageLink">
+                                <img
+                                    src="./assets/img/javascript-nang-cao.png"
+                                    alt=""
+                                    class="course__image"
+                                />
+                            </a>
+                            <h3 class="course__name">Lập trình JavaScript nâng cao</h3>
+                            <span class="course__rice">1.299.000đ</span>
+                        </div>
+                    </div>
+
+                     <!-- Item 5 -->
+                     <div class="col">
+                        <div class="course__item">
+                            <a href="#!" class="course__imageLink">
+                                <img
+                                    src="./assets/img/responsive.png"
+                                    alt=""
+                                    class="course__image"
+                                />
+                            </a>
+                            <h3 class="course__name">Responsive với Grid System</h3>
+                            <span class="course__rice">1.299.000đ</span>
+                        </div>
+                    </div>
+
+                      <!-- Item 6 -->
+                      <div class="col">
+                        <div class="course__item">
+                            <a href="#!" class="course__imageLink">
+                                <img
+                                    src="./assets/img/dung-cham-tay-len-mat.png"
+                                    alt=""
+                                    class="course__image"
+                                />
+                            </a>
+                            <h3 class="course__name">App "Đừng chạm tay lên mặt"</h3>
+                            <span class="course__rice">1.299.000đ</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 -->
+                    <div class="col">
+                        <div class="course__item">
+                            <a href="#!" class="course__imageLink">
+                                <img
+                                    src="./assets/img/C++.png"
+                                    alt=""
+                                    class="course__image"
+                                />
+                            </a>
+                            <h3 class="course__name">Lập trình C++ cơ bản, nâng cao</h3>
+                            <span class="course__rice">1.299.000đ</span>
+                        </div>
+                    </div>
+
+                     <!-- Item 6 -->
+                     <div class="col">
+                        <div class="course__item">
+                            <a href="#!" class="course__imageLink">
+                                <img
+                                    src="./assets/img/react-js.png"
+                                    alt=""
+                                    class="course__image"
+                                />
+                            </a>
+                            <h3 class="course__name">Xấy dựng Website với ReactJS</h3>
+                            <span class="course__rice">1.299.000đ</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- List-Blog -->
+             <section>
+                <div class="row">
+                    <div class="col blog-title">
+                        <h1 class="blog-heading">Bài viết nổi bật</h1>
+                        <a href="#!" class="blog-title__view">Xem tất cả ></a>
+                    </div>
+                </div>
+
+                <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1">
+                    <!-- Item 1 -->
+                    <div class="col">
+                        <div class="blog__item">
+                            <a href="#!" class="blog__imageLink">
+                                <img
+                                    src="./assets/img/blog-hoc-vien-funix.jpg"
+                                    alt=""
+                                    class="blog__image"
+                                />
+                            </a>
+                            <h3 class="blog__name text-wrap"><a href="#!">Học viên Funix lạc đường tới F8</a></h3>
+                            <div class="blog__info">
+                                <img src="./assets/img/logo.png" alt="" class="blog__userAvatar">
+                                <p class="blog__userName">Nguyễn Thế Vinh</p>
+                                <span class="blog__time">2 phút đọc</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="col">
+                        <div class="blog__item">
+                            <a href="#!" class="blog__imageLink">
+                                <img
+                                    src="./assets/img/7-ky-nang.jpg"
+                                    alt=""
+                                    class="blog__image"
+                                />
+                            </a>
+                            <h3 class="blog__name text-wrap"><a href="#!">7 kỹ năng mềm lập trình viên nên có để thành công</a></h3>
+                            <div class="blog__info">
+                                <img src="./assets/img/logo.png" alt="" class="blog__userAvatar">
+                                <p class="blog__userName">Nguyễn Thế Vinh</p>
+                                <span class="blog__time">2 phút đọc</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="col">
+                        <div class="blog__item">
+                            <a href="#!" class="blog__imageLink">
+                                <img
+                                    src="./assets/img/7-ky-nang.jpg"
+                                    alt=""
+                                    class="blog__image"
+                                />
+                            </a>
+                            <h3 class="blog__name text-wrap"><a href="#!">7 kỹ năng mềm lập trình viên nên có để thành công</a></h3>
+                            <div class="blog__info">
+                                <img src="./assets/img/logo.png" alt="" class="blog__userAvatar">
+                                <p class="blog__userName">Nguyễn Thế Vinh</p>
+                                <span class="blog__time">2 phút đọc</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="col">
+                        <div class="blog__item">
+                            <a href="#!" class="blog__imageLink">
+                                <img
+                                    src="./assets/img/7-ky-nang.jpg"
+                                    alt=""
+                                    class="blog__image"
+                                />
+                            </a>
+                            <h3 class="blog__name text-wrap"><a href="#!">7 kỹ năng mềm lập trình viên nên có để thành công</a></h3>
+                            <div class="blog__info">
+                                <img src="./assets/img/logo.png" alt="" class="blog__userAvatar">
+                                <p class="blog__userName">Nguyễn Thế Vinh</p>
+                                <span class="blog__time">2 phút đọc</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
