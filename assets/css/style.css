@@ -161,11 +161,11 @@ button {
     object-fit: cover;
 }
 
-.course__image:hover,
-.blog__image:hover,
+.course__imageLink:hover,
+.blog__imageLink:hover,
 .course__name:hover,
 .blog__name:hover {
-    opacity: 0.6;
+    opacity: 0.7;
     transition: 0.2s ease;
 }
 
