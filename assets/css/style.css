@@ -173,12 +173,13 @@ button {
     position: relative;
 }
 
-.course__btn {
+.course__btn,
+.blog__btn {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    max-width: 130px;
+    width: 130px;
     background: #fff;
     height: 30px;
     border-radius: 15px;
@@ -190,7 +191,8 @@ button {
     visibility: hidden;
 }
 
-.course__imageLink:hover .course__btn {
+.course__imageLink:hover .course__btn,
+.blog__imageLink:hover .blog__btn {
     opacity: 1;
     visibility: visible;
     cursor: pointer;
@@ -219,6 +221,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.blog__item {
+    position: relative;
 }
 
 .blog-title__view {
