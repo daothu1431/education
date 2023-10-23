@@ -88,6 +88,10 @@
     .menu-checkbox:checked ~ .menu-drawer {
         transform: translateX(0);
     }
+
+    .slideshow-media__image {
+        display: none;
+    }
 }
 
 /* Tablet */
