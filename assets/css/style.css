@@ -184,7 +184,7 @@ button {
     align-items: center;
     justify-content: center;
     position: absolute;
-    width: 130px;
+    min-width: 130px;
     background: #fff;
     height: 30px;
     border-radius: 15px;
