@@ -6,22 +6,120 @@
 
 /* PC */
 @media screen and (min-width: 992px) {
-    
+    .mobile-header {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
 }
 
 /* Tablet & moblie */
 @media screen and (max-width: 991px) {
-   
+    .navbar {
+        display: none;
+    }
 
-    
+    .container {
+        position: relative;
+    }
+
+    .container .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .action {
+        margin-left: auto;
+    }
+
+    /* B3 */
+    .header .toggle-menu {
+        width: 24px;
+    }
+
+    /* B4 */
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 30% 0 0;
+        padding: 60px;
+        background: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer .menu-drawer__logo {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer .navbar__link {
+        display: block;
+        font-size: 20px;
+        padding: 14px 0;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
-    
+    .show-on-mobile {
+        display: none;
+    }
 }
 
 /* Mobile */
 @media screen and (max-width: 767.98px) {
-   
+    .container {
+        padding: 0 18px;
+    }
+
+    .top-bar .action {
+        display: none;
+    }
+
+    .top-bar {
+        padding: 15px 0;
+    }
+
+    .top-bar .logo__image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .space {
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        border-radius: 10px;
+    }
 }
