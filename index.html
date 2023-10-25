@@ -26,6 +26,9 @@
         <link rel="stylesheet" href="./assets/css/responsive.css">
     </head>
     <body>
+
+
+        <!-- HEADER PC   -->
         <header class="header fixed">
             <div class="container">
                 <div class="top-bar">
@@ -128,6 +131,7 @@
                         <li class="navbar__item show-on-mobile">
                             <a href="" class="navbar__link">Đăng ký</a>
                         </li>
+                     
                     </ul>
               
 
@@ -139,20 +143,83 @@
             <!-- Slide-show -->
             <div class="slideshow">
                 <div class="slideshow__inner">
-
-                    <!-- Item 1 -->
-                    <div class="slideshow__item">
-                        <div class="slideshow-info">
-                            <h1 class="slideshow-info__heading">Học HTML CSS cho người mới</h1>
-                            <p class="slideshow-info__desc">Thực hành dự án với Figma, hàng trăm bài tập và thử thách, hướng dẫn 100% bởi Đào Thu, tặng kèm Flashcards, v.v.</p>
-                            <div >
-                                <a href="" class="slideshow-info__btn" target="_blank">Ủng hộ tác giả</a>
+                    <!-- Swiper Slide -->
+                    <swiper-container
+                        class="mySwiper"
+                        pagination="true"
+                    >
+                        <!-- Item 1 -->
+                        <swiper-slide>                                 
+                            <div class="slideshow__item slide-item1">
+                                <!-- Info -->
+                                <div class="slideshow-info">
+                                    <h1 class="slideshow-info__heading">Học HTML CSS cho người mới</h1>
+                                    <p class="slideshow-info__desc">Thực hành dự án với Figma, hàng trăm bài tập và thử thách, hướng dẫn 100% bởi Đào Thu, tặng kèm Flashcards, v.v.</p>
+                                    <div >
+                                        <a href="" class="slideshow-info__btn" target="_blank">Ủng hộ tác giả</a>
+                                    </div>
+                                </div>
+                                <!-- Media -->
+                                <div class="slideshow-media">
+                                    <img src="./assets/img/slideIcon1.png" alt="" class="slideshow-media__image">
+                                </div>
                             </div>
-                        </div>
-                        <div class="slideshow-media">
-                            <img src="./assets/img/slideIcon1.png" alt="" class="slideshow-media__image">
-                        </div>
-                    </div>
+                        </swiper-slide>
+
+                        <!-- Item 2 -->
+                        <swiper-slide>                                 
+                            <div class="slideshow__item slide-item2">
+                                <!-- Info -->
+                                <div class="slideshow-info">
+                                    <h1 class="slideshow-info__heading">Đăng ký học Offline tại Hải Phòng</h1>
+                                    <p class="slideshow-info__desc">Hình thức học Offline phù hợp nếu bạn muốn được hướng dẫn và hỗ trợ trực tiếp tại lớp. Giờ học linh hoạt, phù hợp cả sinh viên và người đi làm.</p>
+                                    <div >
+                                        <a href="" class="slideshow-info__btn" target="_blank">Nhận tư vấn</a>
+                                    </div>
+                                </div>
+                                <!-- Media -->
+                                <div class="slideshow-media">
+                                    <img src="./assets/img/slideicon2.png" alt="" class="slideshow-media__image">
+                                </div>
+                            </div>
+                        </swiper-slide>
+
+                         <!-- Item 3 -->
+                         <swiper-slide>                                 
+                            <div class="slideshow__item slide-item3">
+                                <!-- Info -->
+                                <div class="slideshow-info">
+                                    <h1 class="slideshow-info__heading">Thành Quả của Học Viên</h1>
+                                    <p class="slideshow-info__desc">Để đạt được kết quả tốt trong mọi việc ta cần xác định mục tiêu rõ ràng cho việc đó. Học lập trình cũng không là ngoại lệ.</p>
+                                    <div >
+                                        <a href="" class="slideshow-info__btn" target="_blank">Xem thành quả</a>
+                                    </div>
+                                </div>
+                                <!-- Media -->
+                                <div class="slideshow-media">
+                                    <img src="./assets/img/slideIcon3.png" alt="" class="slideshow-media__image">
+                                </div>
+                            </div>
+                        </swiper-slide>
+
+                         <!-- Item 4 -->
+                         <swiper-slide>                                 
+                            <div class="slideshow__item slide-item4">
+                                <!-- Info -->
+                                <div class="slideshow-info">
+                                    <h1 class="slideshow-info__heading">Đào Thu trên Youtube</h1>
+                                    <p class="slideshow-info__desc">Đào Thu được nhắc tới ở mọi nơi, ở đâu có cơ hội việc làm cho nghề IT và có những con người yêu thích lập trình tớ sẽ ở đó.</p>
+                                    <div >
+                                        <a href="" class="slideshow-info__btn" target="_blank">Truy cập kênh</a>
+                                    </div>
+                                </div>
+                                <!-- Media -->
+                                <div class="slideshow-media">
+                                    <img src="./assets/img/slideIcon4.png" alt="" class="slideshow-media__image">
+                                </div>
+                            </div>
+                        </swiper-slide>
+                    </swiper-container>
                     
                 </div>
             </div>
@@ -393,6 +460,10 @@
 
 
         <!-- Footer -->
+        <footer class="footer">
+            Nội dung Footer
+        </footer>
         <script src="./assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     </body>
 </html>

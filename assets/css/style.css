@@ -57,7 +57,7 @@ button {
 .header.fixed {
     position: sticky;
     top: -10px;
-    z-index: 1;
+    z-index: 2;
 }
 .container {
     padding: 0;
@@ -136,13 +136,30 @@ button {
     width: 100%;
     height: 300px;
     border-radius: 15px;
+
+    padding: 30px 30px;
+}
+
+.slide-item1 {
     background: linear-gradient(
         to right,
         rgb(104, 40, 250),
         rgb(255, 186, 164)
     );
-    padding: 30px 30px;
 }
+
+.slide-item2 {
+    background: linear-gradient(to right, rgb(136, 40, 250), rgb(89, 169, 250));
+}
+
+.slide-item3 {
+    background: linear-gradient(to right, rgb(118, 18, 255), rgb(5, 178, 255));
+}
+
+.slide-item4 {
+    background: linear-gradient(to right, rgb(254, 33, 94), rgb(255, 148, 2));
+}
+
 
 .slideshow-info {
     width: 640px;
@@ -182,7 +199,7 @@ button {
 }
 
 .slideshow-media {
-   width: 33.33%;
+    width: 33.33%;
 }
 
 .slideshow-media__image {
