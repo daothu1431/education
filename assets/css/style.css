@@ -430,6 +430,10 @@ button {
     line-height: 1.4;
 }
 
+.footer__link:hover {
+    color: #fff;
+}
+
 .footer__lable {
     margin-top: 20px;
     font-weight: 600;

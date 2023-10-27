@@ -92,6 +92,10 @@
     .slideshow-media__image {
         display: none;
     }
+
+    .footer__inner {
+        margin-top: 15px;
+    }
 }
 
 /* Tablet */
@@ -125,5 +129,12 @@
         height: 1px;
         background: #ccc;
         border-radius: 10px;
+    }
+
+    .footer__bottom {
+        display: block;
+    }
+    .footer__socials {
+        margin-top: 35px;
     }
 }
