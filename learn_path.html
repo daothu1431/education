@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lộ trình</title>
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Sen:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Grid -->
+        <link rel="stylesheet" href="./assets/css/grid_system.css" />
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Responsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+    </head>
+    <body>
+          <!-- HEADER PC   -->
+          <header class="header fixed">
+            <div class="container">
+                <div class="top-bar">
+
+                    <!-- B3 -->
+                    <!-- Tablet/mobile menu -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
+                    <!-- Logo -->
+                    <a href="./" class="logo">
+                        <img
+                            src="./assets/img/logo.png"
+                            alt=""
+                            class="logo__image"
+                        />
+                    </a>
+
+                    <!-- Navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="./" class="navbar__link navbar-active" onclick="activateItem(this)">Trang chủ</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!"  class="navbar__link" onclick="activateItem(this)">Lộ trình</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#blog" class="navbar__link" onclick="activateItem(this)">Bài viết</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link" onclick="activateItem(this)">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Action -->
+                    <div class="action">
+                        <a href="#!" class="action__singup">Đăng ký</a>
+                        <a href="#!" class="action__signin">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- TABLET/ MOBILE HEADER -->
+        <header class="mobile-header">
+            <!-- Checkbox -->
+            <input
+            type="checkbox"
+            name="menu-checkbox"
+            class="menu-checkbox"
+            id="menu-checkbox"
+            hidden
+            />
+
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu-content -->
+            <div class="menu-drawer">
+                 <!-- Logo -->
+                 <a href="./" class="logo">
+                    <img
+                        src="./assets/img/logo.png"
+                        alt=""
+                        class="menu-drawer__logo"
+                    />
+                </a>
+
+                <!-- Navbar -->
+               
+                    <ul class="">
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link"
+                                >Trang chủ</a
+                            >
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Lộ trình</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Bài viết</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Liên hệ</a>
+                        </li>
+                        <div class="space"></div>
+                        <li class="navbar__item show-on-mobile">
+                            <a href="#!" class="navbar__link">Đăng nhập</a>
+                        </li>
+                        <li class="navbar__item show-on-mobile">
+                            <a href="#!" class="navbar__link">Đăng ký</a>
+                        </li>
+                     
+                    </ul>
+              
+
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="learning-path">
+                <h1 class="learning-path__heading">Lộ trình học</h1>
+                <div class="learning-path__desc-wrapper">
+                    <p>Để bắt đầu một cách thuận lợi, bạn nên tập trung vào một lộ trình học. Ví dụ: Để đi làm với vị trí "Lập trình viên Front-end" bạn nên tập trung vào lộ trình "Front-end".</p>
+                </div>
+
+                <div class="learning-path__list">
+                    <!-- Item 1 -->
+                    <div class="learning-path__item">
+                        <div class="learning-path-item__body">
+                            <div class="learning-path-item__body-info">
+                                <h2 class="learning-path-item__title">Lộ trình học Front-end</h2>
+                                <p class="learning-path-item__desc">Lập trình viên Front-end là người xây dựng ra giao diện websites. Trong phần này F8 sẽ chia sẻ cho bạn lộ trình để trở thành lập trình viên Front-end nhé.</p>
+                            </div>
+                            <div class="learning-path-item__body-thumb">
+                                <div class="learning-path-item__thumb-round">
+                                    <img src="./assets/img/learning-path-thumb.png" alt="" class="learning-path__thumb">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learning-path__cta">
+                            <div class="learning-path__cta-item">
+                                <img src="./assets/img/learn-cta-icon1.png" alt="" class="learning-path__cta-icon">
+                            </div>
+                            <div class="learning-path__cta-item">
+                                <img src="./assets/img/learn-cta-icon2.png" alt="" class="learning-path__cta-icon">
+                            </div>
+                            <div class="learning-path__cta-item">
+                                <img src="./assets/img/learn-cta-icon3.png" alt="" class="learning-path__cta-icon">
+                            </div>
+                            <div class="learning-path__cta-item">
+                                <img src="./assets/img/learn-cta-icon4.png" alt="" class="learning-path__cta-icon">
+                            </div>
+                            <div class="learning-path__cta-item">
+                                <img src="./assets/img/learn-cta-icon5.png" alt="" class="learning-path__cta-icon">
+                            </div>
+                            <div class="learning-path__cta-item">
+                                <img src="./assets/img/learn-cta-icon6.png" alt="" class="learning-path__cta-icon">
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="" class="btn learning-path__btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="learning-path__item">
+                        <div class="learning-path-item__body">
+                            <div class="learning-path-item__body-info">
+                                <h2 class="learning-path-item__title">Lộ trình học Back-end</h2>
+                                <p class="learning-path-item__desc">Trái với Front-end thì lập trình viên Back-end là người làm việc với dữ liệu, công việc thường nặng tính logic hơn. Chúng ta sẽ cùng tìm hiểu thêm về lộ trình học Back-end nhé.</p>
+                            </div>
+                            <div class="learning-path-item__body-thumb">
+                                <div class="learning-path-item__thumb-round">
+                                    <img src="./assets/img/learning-path-thumb2.png" alt="" class="learning-path__thumb">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learning-path__cta">
+                            <div class="learning-path__cta-item">
+                                <img src="./assets/img/learn-cta-icon1.png" alt="" class="learning-path__cta-icon">
+                            </div>
+                            <div class="learning-path__cta-item">
+                                <img src="./assets/img/learn-cta-icon2.png" alt="" class="learning-path__cta-icon">
+                            </div>
+                            <div class="learning-path__cta-item">
+                                <img src="./assets/img/learn-cta-icon3.png" alt="" class="learning-path__cta-icon">
+                            </div>
+                            <div class="learning-path__cta-item">
+                                <img src="./assets/img/learn-cta-icon4.png" alt="" class="learning-path__cta-icon">
+                            </div>
+                            <div class="learning-path__cta-item">
+                                <img src="./assets/img/learn-cta-icon5.png" alt="" class="learning-path__cta-icon">
+                            </div>
+                            <div class="learning-path__cta-item">
+                                <img src="./assets/img/learn-cta-icon6.png" alt="" class="learning-path__cta-icon">
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="" class="btn learning-path__btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="susgestion">
+                    <div class="susgestion__info">
+                        <h2 class="susgestion__heading">Tham gia cộng đồng học viên trên Facebook</h2>
+                        <p class="susgestion__desc">Hàng nghìn người khác đang học lộ trình giống như bạn. Hãy tham gia hỏi đáp, chia sẻ và hỗ trợ nhau trong quá trình học nhé.</p>
+                        <a href="#!" class="susgestion__cta">Tham gia nhóm</a>
+                    </div>
+                    <div class="susgestion__media">
+                        <img src="./assets/img/sus_image.png" class="susgestion__image" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+         <!-- Footer -->
+         <footer class="footer">
+            <div class="container">
+             <section>
+                 <div class="row"> 
+                     <div class="col-lg-3  col-md-12 col-12" >
+                         <div class="footer__inner">
+                              <!-- Logo -->
+                             <a href="./" class="footer__logo">
+                                 <img
+                                     src="./assets/img/logo.png"
+                                     alt=""
+                                     class="footer__logo"
+                                 />
+                             </a>
+                             <p class="footer__desc">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, maxime et veniam eligendi rem
+                                 voluptatibus.
+                             </p>
+                             <p class="footer__help-text">Receive product news and updates.</p>
+                             <form action="" class="footer__form">
+                                 <input type="text" name="" class="footer__input" placeholder="Email address">
+                                 <button class="btn footer__btn">SEND</button>
+                             </form>
+ 
+                         </div>
+                     </div>
+ 
+                     <div class="col-lg-2 col-md-12 col-12">
+                         <div class="footer__inner">
+                             <h3 class="footer__heading">SHOP</h3>
+                             <ul class="footer__list">
+                                 <li>
+                                     <a href="#!" class="footer__link">All Departments</a>
+                                 </li>
+                                 <li>
+                                     <a href="#!" class="footer__link">Fashion Deals</a>
+                                 </li>
+                                 <li>
+                                     <a href="#!" class="footer__link">Electronics Discounts</a>
+                                 </li>
+                                 <li>
+                                     <a href="#!" class="footer__link">Home & Living Specials</a>
+                                 </li>
+                                 <li>
+                                     <a href="#!" class="footer__link">Beauty Bargains</a>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+ 
+                     <div class="col-lg-2 col-md-12 col-12">
+                         <div class="footer__inner">
+                             <h3 class="footer__heading">Company</h3>
+                             <ul class="footer__list">
+                                 <li>
+                                     <a href="#!" class="footer__link">Customer Service</a>
+                                 </li>
+                                 <li>
+                                     <a href="#!" class="footer__link">Terms of Use</a>
+                                 </li>
+                                 <li>
+                                     <a href="#!" class="footer__link">Privacy</a>
+                                 </li>
+                                 <li>
+                                     <a href="#!" class="footer__link">Careers Use</a>
+                                 </li>
+                                 <li>
+                                     <a href="#!" class="footer__link">Affiliates</a>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+ 
+                     <div class="col-lg-3 col-md-12 col-12" >
+                         <div class="footer__inner">
+                             <h3 class="footer__heading">Contact</h3>
+                             <ul class="footer__list">
+                                 <li>
+                                    <p class="footer__lable">Email</p>
+                                    <a href="mailto:contact@grocerymart.com" class="footer__link"> Contact@grocerymart.com </a>
+                                 </li>
+                                 <li>
+                                     <p class="footer__lable">Hotline</p>
+                                     <a href="tel:18008888" class="footer__link">18008888</a>
+                                  </li>
+                                 <li>
+                                     <p class="footer__lable">Address</p>
+                                     <p class="footer__text">
+                                         No. 11D, Lot A10, Nam Trung Yen urban area, Yen Hoa Ward, Cau Giay District, City. Hanoi
+                                     </p>
+                                 </li>
+                                 <li>
+                                     <p class="footer__lable">Hours</p>
+                                     <p class="footer__text">M - F 08:00am - 06:00pm</p>
+                                 </li>
+                                 
+                             </ul>
+                         </div>
+                     </div>
+ 
+                     
+                 </div>
+                 <div class="footer__bottom">
+                     <p class="footer__copyright">© 2010 - 2025 Grocery Mart. All rights reserved.</p>
+                     <div class="footer__socials">
+                         <a href="" class="footer__social-link footer__social-link--facebook">
+                             <img src="./assets/icon/facebook.svg" alt="" class="footer__social-icon">
+                         </a>
+                         <a href="" class="footer__social-link footer__social-link--youtube">
+                             <img src="./assets/icon/youtube.svg" alt="" class="footer__social-icon">
+                         </a>
+                         <a href="" class="footer__social-link footer__social-link--tiktok">
+                             <img src="./assets/icon/tiktok.svg" alt="" class="footer__social-icon">
+                         </a>
+                         <a href="" class="footer__social-link footer__social-link--twitter">
+                             <img src="./assets/icon/twitter.svg" alt="" class="footer__social-icon">
+                         </a>
+                         <a href="" class="footer__social-link footer__social-link--linkedin">
+                             <img src="./assets/icon/linkedin.svg" alt="" class="footer__social-icon">
+                         </a>
+                     </div>
+                 </div>
+             </section>
+            </div>
+         </footer>
+         <script src="./assets/js/main.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    </body>
+</html>
