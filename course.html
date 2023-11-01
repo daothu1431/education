@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Education</title>
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Sen:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Grid -->
+        <link rel="stylesheet" href="./assets/css/grid_system.css" />
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Responsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+    </head>
+    <body>
+
+
+        <!-- HEADER PC   -->
+        <header class="header fixed">
+            <div class="container">
+                <div class="top-bar">
+
+                    <!-- B3 -->
+                    <!-- Tablet/mobile menu -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
+                    <!-- Logo -->
+                    <a href="./" class="logo">
+                        <img
+                            src="./assets/img/logo.png"
+                            alt=""
+                            class="logo__image"
+                        />
+                    </a>
+
+                    <!-- Navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="./" class="navbar__link navbar-active" onclick="activateItem(this)">Trang chủ</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="learn_path.html"  class="navbar__link" onclick="activateItem(this)">Lộ trình</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#blog" class="navbar__link" onclick="activateItem(this)">Bài viết</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link" onclick="activateItem(this)">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Action -->
+                    <div class="action">
+                        <a href="#!" class="action__singup">Đăng ký</a>
+                        <a href="#!" class="action__signin">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- TABLET/ MOBILE HEADER -->
+        <header class="mobile-header">
+            <!-- Checkbox -->
+            <input
+            type="checkbox"
+            name="menu-checkbox"
+            class="menu-checkbox"
+            id="menu-checkbox"
+            hidden
+            />
+
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu-content -->
+            <div class="menu-drawer">
+                 <!-- Logo -->
+                 <a href="./" class="logo">
+                    <img
+                        src="./assets/img/logo.png"
+                        alt=""
+                        class="menu-drawer__logo"
+                    />
+                </a>
+
+                <!-- Navbar -->
+               
+                    <ul class="">
+                        <li class="navbar__item">
+                            <a href="./" class="navbar__link"
+                                >Trang chủ</a
+                            >
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__link">Lộ trình</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__link">Bài viết</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__link">Liên hệ</a>
+                        </li>
+                        <div class="space"></div>
+                        <li class="navbar__item show-on-mobile">
+                            <a href="" class="navbar__link">Đăng nhập</a>
+                        </li>
+                        <li class="navbar__item show-on-mobile">
+                            <a href="" class="navbar__link">Đăng ký</a>
+                        </li>
+                     
+                    </ul>
+              
+
+            </div>
+        </header>
+
+            <!-- Main -->
+           <!-- Section 5 -->
+        <div class="container">
+            <section class="course-inner">
+                <div class="row"> 
+                    <div class="col-lg-8 col-md-6 col-12" >
+                        <div class="course-inner__left">
+                            <h1 class="heading-lv1">HTML CSS Pro</h1>
+                            <p class="all-desc">Sở hữu một Terminal hiện đại, mạnh mẽ trong tùy biến và học cách làm việc với Ubuntu là một bước quan trọng trên con đường trở thành một Web Developer.</p>
+                            <h2 class="heading-lv3">Bạn sẽ học được gì?</h2>
+                            <p class="about__checklist">
+                                <span class="about__check-item">
+                                    <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                    Biết cách cài đặt và tùy biến Windows Terminal
+                                </span>
+                                <span class="about__check-item">
+                                    <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                    Thành thạo sử dụng các lệnh Linux/Ubuntu
+                                </span>
+                                <span class="about__check-item">
+                                    <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                    Biết cài đặt PHP 7.4 và MariaDB trên Ubuntu 20.04
+                                </span>
+                                <span class="about__check-item">
+                                    <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                    Biết sử dụng Windows Subsystem for Linux
+                                </span>
+                                <span class="about__check-item">
+                                    <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                    Biết cài đặt Node và tạo dự án ReactJS/ExpressJS
+                                </span>
+                                <span class="about__check-item">
+                                    <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                    Hiểu về Ubuntu và biết tự cài đặt các phần mềm khác
+                                </span>
+                               
+                            </p>
+
+                            <!-- Nội dung khóa học -->
+                            <h2 class="heading-lv3">Nội dung khóa học</h2>
+                            <button class="accordion">Làm quen với HTML</button>
+                            <div class="panel">
+                                <p class="lesson-item">
+                                    <img src="./assets/icon/play.svg" alt="" class="play-icon">
+                                    <a href="./learning.html">Click vào đây!</a>
+                                </p>
+                                
+                            </div>
+                            <button class="accordion">Làm quen với CSS</button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amd mi nisi</p>
+                            </div>
+
+                            <h2 class="heading-lv3">Yêu cầu</h2>
+                            <span class="about__check-item margin">
+                                <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                Máy tính kết nối internet (từ Windows 10 trở lên)
+                            </span>
+                            <span class="about__check-item margin">
+                                <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                Đã từng làm việc với Terminal, hiểu Terminal là gì và để làm gì
+                            </span>
+                            <span class="about__check-item margin">
+                                <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                Ý thức cao, trách nhiệm cao trong việc tự học. Thực hành lại sau mỗi bài học
+                            </span>
+                            <span class="about__check-item margin">
+                                <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                Khi học nếu có khúc mắc hãy tham gia hỏi/đáp tại group FB: Học lập trình web (fullstack.edu.vn)
+                            </span>
+                            <span class="about__check-item margin">
+                                <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                Bạn không cần biết gì hơn nữa, trong khóa học tôi sẽ chỉ cho bạn những gì bạn cần phải biết
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Media -->
+                    <div class="col-lg-4  col-md-6 col-12">
+                        <div class="course-inner__right">
+                            <img src="./assets/img/html-css-pro.png" class="course-inner__right-image" alt="">
+                            <a href="" class="btn course-buy__btn">Mua khóa học</a>
+                            <div class="course__buy-desc">
+                                <span class="about__check-item margin">
+                                    <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                   Trình độ cơ bản
+                                </span>
+                                <span class="about__check-item margin">
+                                    <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                    Tổng số 45 bài học
+                                </span>
+                                <span class="about__check-item margin">
+                                    <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                    Hỗ trợ tận tâm, nhiệt tình
+                                </span>
+                                <span class="about__check-item margin">
+                                    <img src="./assets/icon/pass.svg" class="pass_icon" alt="">
+                                    Học mọi lúc mọi nơi
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+           <div class="container">
+            <section>
+                <div class="row"> 
+                    <div class="col-lg-3  col-md-12 col-12" >
+                        <div class="footer__inner">
+                             <!-- Logo -->
+                            <a href="./" class="footer__logo">
+                                <img
+                                    src="./assets/img/logo.png"
+                                    alt=""
+                                    class="footer__logo"
+                                />
+                            </a>
+                            <p class="footer__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, maxime et veniam eligendi rem
+                                voluptatibus.
+                            </p>
+                            <p class="footer__help-text">Receive product news and updates.</p>
+                            <form action="" class="footer__form">
+                                <input type="text" name="" class="footer__input" placeholder="Email address">
+                                <button class="btn footer__btn">SEND</button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-12 col-12">
+                        <div class="footer__inner">
+                            <h3 class="footer__heading">SHOP</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#!" class="footer__link">All Departments</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Fashion Deals</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Electronics Discounts</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Home & Living Specials</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Beauty Bargains</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-12 col-12">
+                        <div class="footer__inner">
+                            <h3 class="footer__heading">Company</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#!" class="footer__link">Customer Service</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Careers Use</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Affiliates</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 col-12" >
+                        <div class="footer__inner">
+                            <h3 class="footer__heading">Contact</h3>
+                            <ul class="footer__list">
+                                <li>
+                                   <p class="footer__lable">Email</p>
+                                   <a href="mailto:contact@grocerymart.com" class="footer__link"> Contact@grocerymart.com </a>
+                                </li>
+                                <li>
+                                    <p class="footer__lable">Hotline</p>
+                                    <a href="tel:18008888" class="footer__link">18008888</a>
+                                 </li>
+                                <li>
+                                    <p class="footer__lable">Address</p>
+                                    <p class="footer__text">
+                                        No. 11D, Lot A10, Nam Trung Yen urban area, Yen Hoa Ward, Cau Giay District, City. Hanoi
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="footer__lable">Hours</p>
+                                    <p class="footer__text">M - F 08:00am - 06:00pm</p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© 2010 - 2025 Grocery Mart. All rights reserved.</p>
+                    <div class="footer__socials">
+                        <a href="" class="footer__social-link footer__social-link--facebook">
+                            <img src="./assets/icon/facebook.svg" alt="" class="footer__social-icon">
+                        </a>
+                        <a href="" class="footer__social-link footer__social-link--youtube">
+                            <img src="./assets/icon/youtube.svg" alt="" class="footer__social-icon">
+                        </a>
+                        <a href="" class="footer__social-link footer__social-link--tiktok">
+                            <img src="./assets/icon/tiktok.svg" alt="" class="footer__social-icon">
+                        </a>
+                        <a href="" class="footer__social-link footer__social-link--twitter">
+                            <img src="./assets/icon/twitter.svg" alt="" class="footer__social-icon">
+                        </a>
+                        <a href="" class="footer__social-link footer__social-link--linkedin">
+                            <img src="./assets/icon/linkedin.svg" alt="" class="footer__social-icon">
+                        </a>
+                    </div>
+                </div>
+            </section>
+           </div>
+        </footer>
+        <script src="./assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    </body>
+</html>
